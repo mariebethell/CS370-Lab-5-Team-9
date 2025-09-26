@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.Collections; 
 
 public class Main {
     public static void main(String[] args) {
@@ -11,12 +13,17 @@ public class Main {
         frame.setSize(1500, 800) ;
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLocationRelativeTo(null); // this will cause the frame to open in the middle of the screen instead of top left corner
-    
         // Add components/images here
         CardPanel cardPanel = new CardPanel();
         frame.add(cardPanel);
         
         // Make the frame visible
         frame.setVisible(true);
+
+        JButton Shuffle = new JButton("Shuffle"); 
+        frame.add(Shuffle, BorderLayout.SOUTH);
+        Shuffle.addActionListener(e ->{
+            Collections.shuffle(list);
+        });
     }
 }
