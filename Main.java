@@ -18,6 +18,7 @@ public class Main {
         
         JButton Shuffle = new JButton("Shuffle"); 
         frame.add(Shuffle, BorderLayout.SOUTH);
+        Shuffle.setPreferredSize(new Dimension(10, 70));
         Shuffle.addActionListener(e ->{
             cardPanel.repaint();
         });

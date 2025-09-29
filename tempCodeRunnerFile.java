@@ -1,0 +1,1 @@
+ Shuffle.setPreferredSize(new Dimension(30, 100));
