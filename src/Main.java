@@ -1,7 +1,8 @@
+/*
+ * Team 9 members: Marie Bethel, Sarah Mcneal, Benjamin Jones, Logan Huynh
+ */
 import javax.swing.*;
 import java.awt.*;
- 
-
 public class Main {
     public static void main(String[] args) {
         // Create a new JFrame
